@@ -1,3 +1,0 @@
-UNO : uno
-DOS : dos
-TRES : tres
