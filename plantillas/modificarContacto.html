@@ -1,0 +1,38 @@
+<div class="row" id="fila1-add">
+	<div class="large-8 medium-12 columns">
+    	<h3>Modificar contacto</h3>
+    	<form ng-controller="modifyContactController">
+          <fieldset>
+            <legend>Contacto</legend>
+            <label>Nombre
+              <input type="text" placeholder="Nombre" ng-model="nombreModificarContacto">
+            </label>
+            <label>Nuevo nombre
+              <input type="text" placeholder="Nombre" ng-model="nuevoNombreModificarContacto">
+            </label>
+            <label>Nuevo teléfono
+              <input type="number" placeholder="654235467" ng-model="nuevoTelefonoModificarContacto">
+            </label>
+            <label>Nuevo correo electrónico
+              <input type="email" placeholder="someone@example.com" ng-model="nuevoEmailModificarContacto">
+            </label>
+            <label>
+            	<input type="checkbox" name="nombre" class="checkbox" id="checkboxModificarNombre" />Modificar nombre
+            </label>
+            <label>
+            	<input type="checkbox" name="telefono" class="checkbox" id="checkboxModificarTelefono" />Modificar teléfono
+            </label>
+            <label>
+            	<input type="checkbox" name="email" class="checkbox" id="checkboxModificarEmail" />Modificar correo electrónico
+            </label>
+            <label>
+            	<button type="button" class="button" ng-click="modifyContact()">Enviar</button>
+            </label>
+          </fieldset>
+        </form>
+    </div> <!-- large-8 medium-12 columns -->
+    <div class="large-4 medium-12 columns warning-owner">
+    	<h3>Advertencia</h3>
+        <p>Para poder modificar el contacto es necesario activar en el formulario los campos que se deseen modificar.</p>
+    </div> <!-- large-4 medium-12 columns warning-owner -->
+</div>

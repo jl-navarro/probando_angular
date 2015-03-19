@@ -1,0 +1,21 @@
+<div class="row" id="fila1-see">
+	<div class="large-6 medium-12 columns">
+    	<h2>Contactos</h2>
+    	<table class="table" ng-controller="mostrarContactosEnTabla">
+        	<thead>
+            	<tr>
+            		<th>Nombre</th>
+                	<th>Teléfono</th>
+                    <th>Correo electrónico</th>
+            	</tr>
+            </thead>
+            <tbody>
+            	<tr ng-repeat="contacto in contactos">
+                	<td>{{contacto.nombre}}</td>
+                    <td>{{contacto.telefono}}</td>
+                    <td>{{contacto.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!-- large-6 medium-12 columns -->
+</div> <!-- fila1-ver -->

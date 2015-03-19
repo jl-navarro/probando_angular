@@ -1,0 +1,16 @@
+<div class="row" id="fila1-add">
+	<div class="large-8 medium-12 columns">
+    	<h3>Borrar contacto</h3>
+    	<form ng-controller="removeContactController">
+          <fieldset>
+            <legend>Contacto</legend>
+            <label>Nombre
+              <input type="text" placeholder="Nombre" ng-model="nombreBorrarContacto">
+            </label>
+            <label>
+            	<button type="button" class="button" ng-click="removeContact()">Enviar</button>
+            </label>
+          </fieldset>
+        </form>
+    </div> <!-- large-8 medium-12 columns -->
+</div>
